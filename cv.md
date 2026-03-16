@@ -6,8 +6,6 @@
 
 *********
 
-![phpto-cv](/img/phpto-cv.JPG "Elizaveta Ustiuzhanina's photo")
-
 ### Contacts
 * **phone:** +79934910917
 * **email:** elisaveta.ustyuzhanina@gmail.com
