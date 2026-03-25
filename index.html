@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <nav class="header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#contacts">Contacts</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#about">About me</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#projects">Projects</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#code">Code Example</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#experience">Experience</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#education">Education</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="cv">
+      <div class="cv__wrapper">
+        <div class="cv__content content">
+          <h1 class="cv__title">Elizaveta Ustiuzhanina, Junior Frontend Developer</h1>
+          <section class="content__about about block" id="about">
+            <h2 class="about__title title">About me &amp; my skills</h2>
+            <span>02</span>
+            <p class="about__description">I've been studying front-end development since 2024 and apply my skills in projects:</p>
+            <ul class="about__list">
+              <li class="about__item">
+                <p>I create semantic and responsive HTML using the BEM methodology;</p>
+              </li>
+              <li class="about__item">
+                <p>I actively use Flexbox and Grid;</p>
+              </li>
+              <li class="about__item">
+                <p>I use Sass/SCSS preprocessors;</p>
+              </li>
+              <li class="about__item">
+                <p>I optimize graphics for Retina screens;</p>
+              </li>
+              <li class="about__item">
+                <p>I implement interactive elements: pop-ups, sliders, and forms;</p>
+              </li>
+              <li class="about__item">
+                <p>I actively work with Figma;</p>
+              </li>
+              <li class="about__item">
+                <p>I apply basic JavaScript knowledge: data types, conditions, loops, functions, closures, and working with the DOM;</p>
+              </li>
+              <li class="about__item">
+                <p>I break code into modules;</p>
+              </li>
+              <li class="about__item">
+                <p>I work with libraries (PristineJS, noUiSlider);</p>
+              </li>
+              <li class="about__item">
+                <p>I use the Fetch API, JSON, and Async/Await to send requests to the server.</p>
+              </li>
+            </ul>
+          </section>
+          <section class="content__experience experience block" id="experience">
+            <h2 class="experience__title title">Experience</h2>
+            <span>03</span>
+            <p class="experience__date">2024.05 - 2025.08</p>
+            <h3 class="experience__subtitle">HTML-Academy</h3>
+            <p class="experience__description">I studied with a mentor. We covered theory and did a lot of practice. My work included:</p>
+            <ul class="experience__list">
+              <li class="experience__item">
+                <p>Developed 6 training projects based on technical requirements and design layouts in Figma;</p>
+              </li>
+              <li class="experience__item">
+                <p>Developed adaptive pages, Retina graphics, SVG, preprocessors, and BEM;</p>
+              </li>
+              <li class="experience__item">
+                <p>Used JavaScript to implement interactivity, work with forms, and interact with the server;</p>
+              </li>
+              <li class="experience__item">
+                <p>Received code reviews from mentors and regularly made edits based on their feedback;</p>
+              </li>
+              <li class="experience__item">
+                <p>Actively used Git;</p>
+              </li>
+              <li class="experience__item">
+                <p>Created interactive React components using JSX + CSS-in-JS syntax;</p>
+              </li>
+              <li class="experience__item">
+                <p>Used basic React hooks: useState, useEffect, useRef, useContext;</p>
+              </li>
+              <li class="experience__item">
+                <p>Used react-router-dom to organize navigation in an SPA.</p>
+              </li>
+            </ul>
+          </section>
+          <section class="content__projects projects block" id="projects">
+            <h2 class="projects__title title">Projects</h2>
+            <span>04</span>
+            <ul class="projects__list">
+              <li class="projects__item">
+                <a class="projects__link" href="https://tola-lab.github.io/lifetour/">lifetour</a>
+              </li>
+              <li class="projects__item">
+                <a class="projects__link" href="https://tola-lab.github.io/internship/">internship</a>
+              </li>
+              <li class="projects__item">
+                <a class="projects__link" href="https://tola-lab.github.io/drink2go-check/">drink2go</a>
+              </li>
+              <li class="projects__item">
+                <a class="projects__link" href="https://tola-lab.github.io/2436179-cat-energy-2/">cat-energy</a>
+              </li>
+            </ul>
+          </section>
+          <section class="content__code code block" id="code">
+            <h2 class="code__title title">Code Example</h2>
+            <span>05</span>
+            <pre><code>function updatePaginationWindow() {
+    const bullets = newsSwiper.pagination.bullets;
+    const totalBullets = bullets.length;
+    const currentBullet = newsSwiper.realIndex;
+
+    let startCount = 0;
+
+    if (currentBullet &lt;= 2) {
+      startCount = 0;
+    } else if (currentBullet >= totalBullets - 1) {
+      startCount = totalBullets - 4;
+    } else {
+      startCount = currentBullet - 2;
+    }
+
+    bullets.forEach((bullet, index) => {
+      if (index >= startCount && index &lt; startCount + 4) {
+        bullet.style.display = 'inline-flex';
+      } else {
+        bullet.style.display = 'none';
+      }
+    });
+  }</code></pre>
+          </section>
+          <section class="content__education education block" id="education">
+            <h2 class="education__title title">Education</h2>
+            <span>06</span>
+            <ul class="education__list">
+              <li class="education__item">
+                <p>Bachelor of Science in Mechatronics and Robotics, ITMO University</p>
+              </li>
+              <li class="education__item">
+                <p>Professional Course in Frontend Development, HTML Academy</p>
+              </li>
+            </ul>
+          </section>
+          <section class="content__soft soft block">
+            <h2 class="soft__title title">Soft skills</h2>
+            <span>07</span>
+            <p class="soft__description">I am responsible and meet deadlines. I ask questions when something is unclear and take feedback well. I am motivated to grow as a developer.</p>
+          </section>
+          <section class="content__language language block">
+            <h2 class="language__title title">Language</h2>
+            <span>08</span>
+            <p class="language__description">English - B1</p>
+            <p class="language__description">Russian - native</p>
+          </section>
+        </div>
+        <section class="cv__contacts contacts" id="contacts">
+          <img class="contacts__img" src="photo-cv.JPG" width="200" height="200" alt="Elizaveta Ustiuzhanina">
+          <h2 class="contacts__title title">Contacts</h2>
+          <span class="contacts__count">01</span>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__line-name"><b>Email:</b></p>
+              <a class="contacts__link" href="mailto:elisaveta.ustyuzhanina@gmail.com">elisaveta.ustyuzhanina@gmail.com</a>
+            </li>
+            <li class="contacts__item contacts__item--github">
+              <p class="contacts__line-name"><b>GitHub/</b></p>
+              <a class="contacts__link" href="https://github.com/Tola-lab">Tola-lab</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__line-name"><b>Phone:</b></p>
+              <a class="contacts__link" href="tel:89934910917">+7 993 491 09 17</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a href="https://rs.school/ru/courses/javascript">
+        <img class="footer__logo" src="rs-school-logo.svg" width="50" height="20" alt="RSSchool">
+      </a>
+      <a class="footer__github" href="https://github.com/Tola-lab">
+        <p>github.com/Tola-lab</p>
+      </a>
+      <p class="footer__copyright">© 2026</p>
+    </div>
+  </footer>
+</body>
+
+</html>
