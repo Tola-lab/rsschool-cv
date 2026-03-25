@@ -34,17 +34,25 @@ I've been studying to become a front-end developer since 2024 and I use it in my
 ### Code Example
 
 ```
-const navMain = document.querySelector('.navigation');
-const navToggle = document.querySelector('.navigation__toggle');
+function updatePaginationWindow() {
+    const bullets = newsSwiper.pagination.bullets;
+    const totalBullets = bullets.length;
+    const currentBullet = newsSwiper.realIndex;
 
-const toggleMenu = () => {
-  navToggle.addEventListener('click', () => {
-    navMain.classList.toggle('navigation--open');
-    navToggle.classList.toggle('navigation__toggle--close');
-  });
-};
+    let startCount = 0;
 
-export {toggleMenu};
+    if (currentBullet <= 2) {
+      startCount = 0;
+    } else if (currentBullet >= totalBullets - 1) {
+      startCount = totalBullets - 4;
+    } else {
+      startCount = currentBullet - 2;
+    }
+
+    bullets.forEach((bullet, index) => {
+      bullet.style.display = (index >= startCount && index < startCount + 4) ? 'inline-flex' : 'none';
+    });
+  }
 ```
 *********
 
