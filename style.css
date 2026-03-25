@@ -22,11 +22,22 @@ body {
 }
 
 img {
-  margin-left: 20px;
+  margin-left: 25px;
   margin-bottom: 30px;
   max-width: 100%;
   object-fit: contain;
   border-radius: 50%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip-path: inset(50%);
+  overflow: hidden;
 }
 
 .main-container {
@@ -83,8 +94,13 @@ img {
   max-width: 700px;
 }
 
+.cv__info-wrapper {
+  max-width: 250px;
+}
+
 .cv__contacts {
   position: relative;
+  margin-bottom: 40px;
 }
 
 .cv__title {
@@ -114,6 +130,7 @@ span {
   margin-bottom: 15px;
   padding: 0;
   padding-bottom: 10px;
+  font-size: 22px;
   text-transform: uppercase;
   border-bottom: 1px dashed #D03B00;
 }
@@ -128,19 +145,35 @@ span {
 
 .about__list,
 .experience__list,
-.projects__list,
 .education__list {
   margin: 0;
   padding-left: 15px;
 }
 
+.projects__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .about__item p,
 .experience__item p,
-.projects__item a,
 .education__item p {
   margin: 0;
   padding: 0;
   padding-bottom: 5px;
+}
+
+.projects__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.projects__item p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
 }
 
 .experience__date {
@@ -216,6 +249,23 @@ span {
 .footer__logo:active,
 .footer__github:active {
   opacity: 0.3;
+}
+
+.tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags__item p {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #D03B00;
+  border-radius: 30px;
 }
 
 .footer__wrapper {
